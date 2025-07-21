@@ -1,0 +1,5 @@
+@article{bailey2023soft,
+  title={Soft prompting might be a bug, not a feature},
+  author={Bailey, Luke and Ahdritz, Gustaf and Kleiman, Anat and Swaroop, Siddharth and Doshi-Velez, Finale and Pan, Weiwei},
+  year={2023}
+}
