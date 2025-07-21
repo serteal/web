@@ -5,26 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="google-site-verification" content="ECiXcj6VWmK7RHyn80IjJdpSvBIqEfvvd7aVPyliUO4" />
     <title>Alex Serrano</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <style>
+        /* Critical font loading */
+        @font-face {
+            font-family: 'Georgia';
+            font-display: swap;
+            src: local('Georgia');
+        }
+    </style>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
         <header>
             <div class="profile-section">
-                <img src="./static/alex.jpg" alt="Luke Bailey" class="profile-photo">
+                <img src="./static/alex.jpg" alt="Alex Serrano" class="profile-photo">
             </div>
             <div class="bio-section">
                 <h1>Alex Serrano Terre</h1>
                 <p>
                     I am a last-year Data Science and Mathematics undergraduate at CFIS (Politechnic University of Catalonia).
-                    Currently, a Research Scholar at <a href="matsprogram.org">MATS</a>, advised by Scott Emmons from Google DeepMind. 
+                    Currently, a Research Scholar at <a href="https://matsprogram.org">MATS</a>, advised by Scott Emmons from Google DeepMind. 
                 </p>
                 <p>
-                    Previously, I also conducted research at the <a href="https://humancompatible.ai/">UC Berkeley Center for Human Compatible AI</a>, 
-                    advised by Scott Emmons.
+                    Previously, I've conducted research at the <a href="https://humancompatible.ai/">UC Berkeley Center for Human Compatible AI</a>, 
+                    advised by Scott Emmons. I've been a Research Fellow at AI Safety Camp, working on fundamental interpretability research supervised 
+                    by Kola Ayonrinde and a Research Fellow at SPAR, working on white-box control measures supervised by Aryan Bhatt.
                 </p>
                 <p>
-                    I am interested in making AI models safer and more robust. If you are interested in collaborating, please reach out.
+                    I am interested in making AI models safer and more robust, and developing effective monitoring measures that can robustly scale to frontier language models.
+                    If you are interested in collaborating, please reach out.
                 </p>
                 <p>
                     Email: mail [at] alexserrano [dot] org <br>
@@ -38,9 +49,25 @@
             <ul>
                 <li>
                     <a href="https://arxiv.org/abs/2412.09565">Obfuscated Activations Bypass LLM Latent-Space Defenses</a><br>
-                    <em><b>Luke Bailey*</b>, Alex Serrano*, Abhay Sheshadri*, Mikhail Seleznyov*, Jordan Taylor*, Erik Jenner*, Jacob Hilton, Stephen Casper, Carlos Guestrin, and Scott Emmons</em><br>
+                    <em>Luke Bailey*, <b>Alex Serrano*</b>, Abhay Sheshadri*, Mikhail Seleznyov*, Jordan Taylor*, Erik Jenner*, Jacob Hilton, Stephen Casper, Carlos Guestrin, and Scott Emmons</em><br>
                     arXiv, 2024<br>
                     [<a href="https://arxiv.org/abs/2412.09565">arXiv</a> | <a href="bibtex/bailey2023obfuscated.txt">BibTeX</a>]
+                </li>
+            </ul>
+        </section>
+
+        <section class="projects">
+            <h2>Open Source Projects</h2>
+            <ul>
+                <li>
+                    <a href="https://github.com/serteal/softprompts"><tt>softprompts</tt></a><br>
+                    <em>Barebones implementation of universal softprompt tuning in PyTorch</em><br>
+                    [<a href="https://github.com/serteal/softprompts">GitHub</a>]
+                </li>
+                <li>
+                    <a href="https://github.com/serteal/nanoflrt"><tt>nanoflrt</tt></a><br>
+                        <em>A custom implementation of the <a href="https://arxiv.org/abs/2407.17447">FLRT</a> LLM redteaming algorithm</em><br>
+                    [<a href="https://github.com/serteal/nanoflrt">GitHub</a>]
                 </li>
             </ul>
         </section>

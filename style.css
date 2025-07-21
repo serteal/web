@@ -1,13 +1,15 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     margin: 0;
     padding: 0;
     background-color: #fff;
     color: #333;
+    line-height: 1.6;
 }
 
 .container {
     width: 60%;
+    max-width: 800px;
     margin: 0 auto;
     padding: 20px;
     background-color: #fff;
@@ -30,8 +32,9 @@ header {
 .profile-photo {
     border-radius: 5%;
     width: 150px;
-    height: 150px;
+    height: 230px;
     object-fit: cover;
+    object-position: center top;
     margin-top: 10px;
     margin-bottom: 10px;
 }
@@ -41,11 +44,34 @@ header {
 }
 
 h1 {
-    font-size: 24px;
-    margin: 10px 0;
+    font-size: 32px;
+    margin: 0 0 10px 0;
+}
+
+h2 {
+    font-size: 20px;
+    font-weight: 300;
+    margin: 15px 0;
+}
+
+.projects {
+    margin-bottom: 60px;
+}
+
+.projects h2 {
+    font-size: 20px;
+    font-weight: 300;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+}
+
+.publications {
+    margin-bottom: 60px;
 }
 
 .publications h2 {
+    font-size: 20px;
+    font-weight: 300;
     border-bottom: 1px solid #ccc;
     padding-bottom: 5px;
 }
@@ -56,16 +82,17 @@ ul {
 }
 
 li {
-    margin-bottom: 20px;
+    margin-bottom: 25px;
 }
 
 a {
     color: #1a73e8;
     text-decoration: none;
+    border-bottom: 1px dotted #1a73e8;
 }
 
 a:hover {
-    text-decoration: underline;
+    border-bottom: 1px solid #1a73e8;
 }
 
 @media screen and (max-width: 768px) {
@@ -90,4 +117,58 @@ a:hover {
 
 .award {
     color: red;
+}
+
+/* Make bold text in publications more prominent */
+.publications em b {
+    font-weight: 900;
+    color: #000;
+    font-style: normal;
+}
+
+/* Make monospace project titles larger */
+.projects tt {
+    font-size: 18px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 500;
+}
+
+/* Print styles */
+@media print {
+    body {
+        color: #000;
+        background: #fff;
+        font-size: 12pt;
+    }
+    
+    .container {
+        width: 100%;
+        max-width: none;
+        box-shadow: none;
+        padding: 0;
+    }
+    
+    header {
+        margin-bottom: 30px;
+    }
+    
+    .profile-photo {
+        width: 100px;
+        height: 100px;
+    }
+    
+    a {
+        color: #000;
+        text-decoration: underline;
+    }
+    
+    .publications h2 {
+        border-bottom: 1px solid #000;
+        page-break-after: avoid;
+    }
+    
+    li {
+        page-break-inside: avoid;
+        margin-bottom: 15px;
+    }
 }
