@@ -1,0 +1,9 @@
+@misc{serrano2026frontiermodelsactionslow,
+      title={Frontier Models Can Take Actions at Low Probabilities},
+      author={Alex Serrano and Wen Xing and David Lindner and Erik Jenner},
+      year={2026},
+      eprint={2603.02202},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG},
+      url={https://arxiv.org/abs/2603.02202},
+}
