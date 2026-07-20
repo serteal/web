@@ -1,0 +1,8 @@
+@misc{lynch2026agenticsummer,
+  author = {Lynch, Aengus and Hughes, John and Serrano, Alex and Kirk, Robert and Bowman, Samuel R.},
+  title = {Agentic Misalignment in Summer 2026},
+  year = {2026},
+  month = {July},
+  day = {13},
+  howpublished = {\url{https://alignment.anthropic.com/2026/agentic-misalignment-summer-2026}}
+}
