@@ -135,6 +135,12 @@ a:hover {
     color: red;
 }
 
+.pub-note {
+    font-size: 14px;
+    color: #666;
+    margin: -5px 0 15px 0;
+}
+
 /* Make bold text in publications more prominent */
 .publications em b {
     font-weight: 900;
